@@ -5,7 +5,7 @@
 //Palidroma
 //Chiedere all’utente di inserire una parola
 //Creare una funzione per capire se la parola inserita è palindroma
-/*
+
 //chiedo all'utente di inserire una parola
 const userWord = prompt("Inserisci una parola palindroma");
 console.log(userWord);
@@ -36,7 +36,6 @@ if (palindromeWord(userWord)) {
 	console.log(outputMessage);
 	alert(outputMessage);
 }
-*/
 
 //Pari e Dispari
 //L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
@@ -62,13 +61,13 @@ function randomNumber(min, max) {
 
 const computerNumber = randomNumber(1, 5);
 console.log("Il numero del computer è " + computerNumber);
+alert("Il numero del computer è " + computerNumber);
 
 //sommo il numero dell'utente e il numero del computer (usando una funzione)
 /*function sommaNumeri(userNumber, computerNumber) {
 	const risultatoSomma = userNumber + computerNumber;
 	return risultatoSomma;
 }
-
 const Somma = sommaNumeri(userNumber, computerNumber);
 console.log(Somma);*/
 
@@ -90,16 +89,16 @@ function isSumEven(sommaNumeri) {
 }
 
 const sumIsEven = isSumEven(sommaNumeri);
-console.log(sumIsEven);
+//console.log(sumIsEven);
 
 //Dichiaro chi ha vinto
 
 if (userChoice === "pari" && sumIsEven) {
-	let outputMessage = "Hai vinto!!";
+	let outputMessage = "La somma dei due numeri è pari, hai vinto!!";
 	console.log(outputMessage);
 	alert(outputMessage);
-} else if (userChoice === "dispari" && !isSumEven) {
-	let outputMessage = "Hai vinto!!";
+} else if (userChoice === "dispari" && !sumIsEven) {
+	let outputMessage = "La somma dei due numeri è dispari, hai vinto!!";
 	console.log(outputMessage);
 	alert(outputMessage);
 } else {
